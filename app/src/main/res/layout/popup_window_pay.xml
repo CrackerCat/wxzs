@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/pay_radius_shape"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginRight="@dimen/spacing_tiny"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/pay_times"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_big"
+            />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/dialog_close"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/singer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginRight="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:background="@drawable/pay_times_btn_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/pay_singer"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small"
+        />
+
+    <TextView
+        android:id="@+id/forver"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginRight="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:background="@drawable/pay_times_btn_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/pay_forver"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small"
+        />
+
+    <TextView
+        android:id="@+id/every_forver"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/spacing_small"
+        android:layout_marginRight="@dimen/spacing_small"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:background="@drawable/pay_times_btn_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/pay_every_forver"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small"
+        android:layout_marginBottom="@dimen/spacing_big"
+        />
+</LinearLayout>

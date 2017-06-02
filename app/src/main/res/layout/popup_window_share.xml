@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mshort"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_btn_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/share_dao"
+        android:textColor="@color/gray_light"
+        android:textSize="@dimen/font_snormal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/weichat1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:src="@mipmap/share_weichat1"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/share_friend"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/font_tiny"
+                android:layout_below="@+id/weichat1"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/weichat2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:src="@mipmap/share_weichat2"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/share_quan"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/font_tiny"
+                android:layout_below="@+id/weichat2"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginLeft="@dimen/spacing_big"
+        android:layout_marginRight="@dimen/spacing_big"
+        ></View>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/share_desc"
+        android:textColor="@color/red"
+        android:textSize="@dimen/font_small"
+        android:padding="@dimen/spacing_small"
+        />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="@string/cancel"
+        android:layout_margin="@dimen/spacing_big"
+        android:textColor="@color/gray_light"
+        android:textSize="@dimen/font_snormal"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/bg2_btn_selector"
+        />
+</LinearLayout>

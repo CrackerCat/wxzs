@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">多开助手</string>
+    <string name="main_bill_list">充值记录</string>
+    <string name="main_service">客服中心</string>
+    <string name="qa">常见问题</string>
+    <string name="share">分享</string>
+    <string name="preparing">正在打开分身...</string>
+    <string name="back">返回</string>
+
+    <string name="service">服务时间：周一~周五</string>
+    <string name="points">该帐号为QQ帐号，并非QQ群，请注意甄别！</string>
+    <string name="qq">客服QQ：</string>
+    <string name="qq_number">1959896935</string>
+    <string name="qa_desc">常见问题, 请点击查看</string>
+
+    <string name="pw_main_modify">修改分身名称</string>
+    <string name="pw_main_del">删除该分身</string>
+    <string name="pw_main_short">添加到桌面</string>
+
+    <string name="share_dao">分享到</string>
+    <string name="share_friend">微信好友</string>
+    <string name="share_quan">微信朋友圈</string>
+
+    <string name="share_desc">分享成功后，增加6小时试用时间！\n（每天仅加时一次时间！）\n 支付成功后有50%概率免单。</string>
+    <string name="cancel">取消</string>
+
+    <string name="pay_times">请选择购买：</string>
+    <string name="pay_singer">元/次，</string>
+    <string name="pay_forver">元/无限制，</string>
+    <string name="pay_every_forver">元/无限制，</string>
+
+    <string name="pay_type">请选择支付方式：</string>
+    <string name="pay_alipay">支付宝支付</string>
+    <string name="pay_weixin">微信支付</string>
+
+    <string name="order_number">订单号：</string>
+    <string name="order_all_money">总额：</string>
+    <string name="order_pay_money">实付：</string>
+
+    <string name="app_list">应用多开助手</string>
+
+    <string name="create_fs">创建分身</string>
+    <string name="update_fs">元升级为</string>
+
+</resources>

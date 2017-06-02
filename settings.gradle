@@ -1,0 +1,1 @@
+include ':app', ':securityhttp', ':pay', ':loading', ':utils', ':share', ':sound', ':vapp', ':scanwx', ':fileupload'

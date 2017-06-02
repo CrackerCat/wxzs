@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#17c782</color>
+    <color name="primaryPressed">#17c772</color>
+    <color name="colorAccent">#17c782</color>
+
+    <color name="white">#ffffff</color>
+    <color name="gray">#dedede</color>
+
+    <color name="gray2">#a5a5a5</color>
+
+    <color name="bg">#fafafa</color>
+    <color name="bg2">#A7A7A7</color>
+    <color name="bg3">#F7F7F7</color>
+    <color name="bg4">#747474</color>
+
+
+
+
+
+    <color name="holo_blue_dark">#0099cc</color>
+    <color name="holo_yellow_dark">#ff8800</color>
+    <color name="holo_green_dark">#669900</color>
+    <color name="holo_purple_dark">#9933cc</color>
+    <color name="holo_red_dark">#cc0000</color>
+
+    <integer-array name="progress_colors">
+        <item>@color/holo_blue_dark</item>
+        <item>@color/holo_yellow_dark</item>
+        <item>@color/holo_green_dark</item>
+        <item>@color/holo_purple_dark</item>
+        <item>@color/holo_red_dark</item>
+    </integer-array>
+
+    <color name="transparent">#00000000</color>
+    <color name="black_20_transparent">#55000000</color>
+
+    <color name="black">#333333</color>
+    <color name="gray_light">#7e7e7e</color>
+    <color name="red">#ff5555</color>
+    <color name="blue">#00afff</color>
+    <color name="red_less_less">#D63534</color>
+
+    <drawable name="translucent">#14000000</drawable>
+    
+    <color name="orange">#f49253</color>
+
+</resources>

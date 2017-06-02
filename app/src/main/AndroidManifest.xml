@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.ff.wxzs"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="cn.swiftpass.spay.permission.MMOAUTH_CALLBACK"/>
+    <uses-permission android:name="cn.swiftpass.spay.permission.MM_MESSAGE"/>
+
+    <application
+        android:name="com.ff.wxzs.WxzsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+
+        <activity
+            android:name="com.ff.wxzs.activitys.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ff.wxzs.activitys.LoadingActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:taskAffinity="va.task.loading"
+            android:theme="@style/TransparentTheme"/>
+
+        <activity
+            android:name="com.ff.wxzs.activitys.HelpActivity"
+            android:label="@string/main_service"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ff.wxzs.activitys.PayRecordActivity"
+            android:label="@string/main_bill_list"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ff.wxzs.activitys.QAActivity"
+            android:label="@string/qa"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.ff.wxzs.activitys.DameoActivity"
+            android:theme="@style/TransparentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="fywxzs"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ff.wxzs.activitys.AppsListActivity"
+            android:label="@string/app_list"
+            android:screenOrientation="portrait"></activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58a4f8d0cae7e708ed00240c"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="net"/>
+
+        <activity
+            android:name="com.ff.wxzs.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:label="@string/app_list"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.ff.wxzs.wxapi.WXEntryActivity"
+            >
+        </activity>
+
+
+    </application>
+
+</manifest>

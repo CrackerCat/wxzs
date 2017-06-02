@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:wxzs="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray">
+
+    <LinearLayout
+        android:id="@+id/section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_big"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.ff.wxzs.views.widgets.HelpItemView
+            android:id="@+id/qq"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            wxzs:color="@color/black"
+            wxzs:src="@mipmap/qq"
+            wxzs:text="@string/qq"
+            >
+        </com.ff.wxzs.views.widgets.HelpItemView>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:background="@color/gray"
+            ></View>
+
+        <com.ff.wxzs.views.widgets.HelpItemView
+            android:id="@+id/service"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            wxzs:color="@color/black"
+            wxzs:src="@mipmap/service"
+            wxzs:text="@string/service"
+            >
+        </com.ff.wxzs.views.widgets.HelpItemView>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:background="@color/gray"
+            ></View>
+
+        <com.ff.wxzs.views.widgets.HelpItemView
+            android:id="@+id/points"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            wxzs:color="@color/red"
+            wxzs:src="@mipmap/service_points"
+            wxzs:text="@string/points"
+            >
+        </com.ff.wxzs.views.widgets.HelpItemView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/section2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/section"
+        android:layout_marginTop="@dimen/spacing_big"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.ff.wxzs.views.widgets.HelpItemView
+            android:id="@+id/qa"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:clickable="true"
+            wxzs:color="@color/black"
+            wxzs:src="@mipmap/cjwt"
+            wxzs:text="@string/qa_desc"></com.ff.wxzs.views.widgets.HelpItemView>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="@color/gray2"
+        android:textSize="@dimen/font_normal"/>
+</RelativeLayout>

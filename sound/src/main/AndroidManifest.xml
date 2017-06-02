@@ -1,0 +1,30 @@
+<manifest package="com.kk.sound"
+
+          xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        >
+
+        <meta-data android:name="com.baidu.speech.APP_ID" android:value="9255246"/>
+        <meta-data android:name="com.baidu.speech.API_KEY" android:value="D2m5htQa0F3lqwVKV8Mi38b9"/>
+        <meta-data android:name="com.baidu.speech.SECRET_KEY" android:value="5838bcc4eea4becda652816828a71824"/>
+
+        <service android:name="com.baidu.speech.VoiceRecognitionService" android:exported="false" ></service>
+        <activity
+            android:name="com.baidu.voicerecognition.android.ui.BaiduASRDigitalDialog"
+            android:configChanges="orientation|keyboardHidden|screenLayout"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.baidu.action.RECOGNIZE_SPEECH"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
