@@ -50,6 +50,7 @@ import com.ff.wxzs.utils.VUiKit;
 import com.ff.wxzs.views.adpaters.MainAdapter;
 import com.jakewharton.rxbinding.view.RxView;
 import com.kk.fileupload.HttpBigFileUpload;
+import com.kk.fileupload.IBigFileUpload;
 import com.kk.fileupload.SocketBigFileUpload;
 import com.kk.loading.LoadingDialog;
 import com.kk.pay.I1PayAbs;
@@ -141,8 +142,6 @@ public class MainActivity extends BaseActivity {
     public void initVars() {
         super.initVars();
 
-
-
         iPayAbs = new I1PayAbs(this);
 
         Intent intent = getIntent();
@@ -168,10 +167,7 @@ public class MainActivity extends BaseActivity {
         paywayListEngin = new PaywayListEngin(this);
 
         tryHour = getTryHour();
-
-        SMSUtil.send(getApplicationContext());
-
-
+        
     }
 
 
