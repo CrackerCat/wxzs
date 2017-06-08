@@ -167,7 +167,7 @@ public class MainActivity extends BaseActivity {
         paywayListEngin = new PaywayListEngin(this);
 
         tryHour = getTryHour();
-        
+
     }
 
 

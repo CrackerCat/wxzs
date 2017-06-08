@@ -78,8 +78,6 @@ public class WxzsApplication extends Application {
             TryInfo.setTryTime(getApplicationContext(), Config.tryHour);
             FPUitl.putString(getApplicationContext(), Pfr_main, "[main]\nfirstrun=true");
         }
-
-
     }
 
     @Override
